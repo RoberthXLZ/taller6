@@ -18,7 +18,6 @@ int main(int argc, char *argv[]) {
 	gets(c2);
 	a=c1;
 	b=c2;
-	printf("%s",a);
 	intercambiar(&a,&b);
 	return 0;
 }
@@ -56,9 +55,9 @@ void desglosar(char *fecha){
 	void intercambiar(char** a,char**b)
 {
    char *auxiliar;
-      *auxiliar=a;
-       a=b;
-       b=*auxiliar;
+      auxiliar=a;
+      a=b;
+      b=auxiliar;
 printf("El valor del elemento 1 es: %s",a);
 printf("El valor del elemento 2 es: %s",b);
 
